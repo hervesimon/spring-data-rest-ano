@@ -1,0 +1,87 @@
+{
+	"info": {
+		"_postman_id": "5c0049ac-8d0f-4746-bbc6-4663ed844955",
+		"name": "spring-data-rest-ano",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "1686551"
+	},
+	"item": [
+		{
+			"name": "test get programme",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/programmes/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"programmes",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "test get programme patch",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"participants\":[\n        {\n            \"firstName\": \"arthuro\",\n            \"lastName\": \"martino\",\n            \"email\": \"arthuro@test.fr\",\n            \"phone\": \"123457419\"\n        },\n        {\n            \"firstName\": \"françois\",\n            \"lastName\": \"hardo\",\n            \"email\": \"françois@test.fr\",\n            \"phone\": \"123456123\"\n        },\n        {\n            \"firstName\": \"herve\",\n            \"lastName\": \"simon\",\n            \"email\": \"herve@test.fr\",\n            \"phone\": \"123456789\"\n        },\n        {\n            \"firstName\": \"simon\",\n            \"lastName\": \"hardy\",\n            \"email\": \"hardy@test.fr\",\n            \"phone\": \"123456788\"\n        },\n        {\n            \"firstName\": \"brigitte\",\n            \"lastName\": \"martin\",\n            \"email\": \"brigitte@test.fr\",\n            \"phone\": \"123456788\"\n        }\n    ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/programmes/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"programmes",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create programme",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\":\"programme 2\",\n    \"description\": \"This is the second programme\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/programmes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"programmes"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
